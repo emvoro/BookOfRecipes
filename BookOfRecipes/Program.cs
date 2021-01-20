@@ -141,14 +141,12 @@ namespace BookOfRecipes
                                             if (filteredRecipes.Count > 0)
                                             {
                                                 Console.WriteLine(
-                                                    "\n 1 - View recipe" +
-                                                    "\n 2 - Go back to main menu");
+                                                    "\n 1 - Go back to main menu" +
+                                                    "\n 2 - Exit");
                                                 int filterCommand = CheckInteger("Enter command", 2);
-                                                if (command == 1)
+                                                if (command == 2)
                                                 {
-                                                    recipeNumber = CheckInteger("Enter number of recipe to view",
-                                                        searchedRecipes.Count) - 1;
-                                                    ViewRecipe(recipeNumber, filteredRecipes);
+                                                    return;
                                                 }
                                             }
                                             break;
@@ -171,7 +169,7 @@ namespace BookOfRecipes
 
         static void ViewRecipe(int number, List<Recipe> recipes)
         {
-            Console.WriteLine(" " + recipes[number].ToString());
+            Console.WriteLine("\n " + recipes[number].ToString());
             PrintRecipes(recipes);
             Console.WriteLine(
                 "\n 1 - Edit recipe" +
@@ -257,7 +255,7 @@ namespace BookOfRecipes
             {
                 while (number <= recipes.Count)
                 {
-                    Console.WriteLine(" " + number + " " + recipes[number - 1].ToString());
+                    Console.WriteLine("\n " + number + recipes[number - 1].ToString());
                     number++;
                 }
             }
@@ -339,20 +337,20 @@ namespace BookOfRecipes
                 case 1:
                     minimum = CheckDecimal("Enter minimum of proteins");
                     maximum = CheckDecimal("Enter maximum of proteins");
-                    recipes = recipes.Where(x => x.NutritionalValue.Proteins > minimum
-                        && x.NutritionalValue.Proteins < maximum).ToList();
+                    recipes = recipes.Where(x => x.NutritionalValue.Proteins >= minimum
+                        && x.NutritionalValue.Proteins <= maximum).ToList();
                     break;
                 case 2:
                     minimum = CheckDecimal("Enter minimum of fats");
                     maximum = CheckDecimal("Enter maximum of fats");
-                    recipes = recipes.Where(x => x.NutritionalValue.Fats > minimum
-                        && x.NutritionalValue.Fats < maximum).ToList();
+                    recipes = recipes.Where(x => x.NutritionalValue.Fats >= minimum
+                        && x.NutritionalValue.Fats <= maximum).ToList();
                     break;
                 case 3:
                     minimum = CheckDecimal("Enter minimum of carbohydrates");
                     maximum = CheckDecimal("Enter maximum of carbohydrates");
-                    recipes = recipes.Where(x => x.NutritionalValue.Carbohydrates > minimum
-                        && x.NutritionalValue.Carbohydrates < maximum).ToList();
+                    recipes = recipes.Where(x => x.NutritionalValue.Carbohydrates >= minimum
+                        && x.NutritionalValue.Carbohydrates <= maximum).ToList();
                     break;
             }
             return recipes;
