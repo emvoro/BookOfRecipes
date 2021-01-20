@@ -1,1 +1,52 @@
-[]
+[
+  {
+    "name": "Mac\u0027n\u0027Cheese",
+    "ingredients": [
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "Cheese"
+      },
+      {
+        "amount": 100,
+        "unit": "ml",
+        "name": "Sour cheam"
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "Cheddar cheese"
+      }
+    ],
+    "nutritionalValue": {
+      "proteins": 25.3,
+      "fats": 28.1,
+      "carbohydrates": 10
+    }
+  },
+  {
+    "name": "Macaroni",
+    "ingredients": [
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "Mandel powder"
+      },
+      {
+        "amount": 150,
+        "unit": "ml",
+        "name": "150"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "Chocolate cream"
+      }
+    ],
+    "nutritionalValue": {
+      "proteins": 10,
+      "fats": 12,
+      "carbohydrates": 35
+    }
+  }
+]

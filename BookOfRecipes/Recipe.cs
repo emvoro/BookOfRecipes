@@ -17,7 +17,7 @@ namespace BookOfRecipes
 
         public override string ToString()
         {
-            string recipe = "\n\n *" + this.Name + "*\n -----------\n Ingredients";
+            string recipe = " *" + this.Name + "*\n -----------\n Ingredients";
             foreach (Ingredient ingredient in this.Ingredients)
             {
                 recipe += "\n - " + ingredient.Name + " " + ingredient.Amount + " " + ingredient.Unit;
