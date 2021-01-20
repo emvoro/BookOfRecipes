@@ -141,12 +141,21 @@ namespace BookOfRecipes
                                             if (filteredRecipes.Count > 0)
                                             {
                                                 Console.WriteLine(
-                                                    "\n 1 - Go back to main menu" +
-                                                    "\n 2 - Exit");
-                                                int filterCommand = CheckInteger("Enter command", 2);
-                                                if (command == 2)
+                                                    "\n 1 - View recipe" +
+                                                    "\n 2 - Go back to main menu" +
+                                                    "\n 3 - Exit");
+                                                int filterCommand = CheckInteger("Enter command", 3);
+                                                switch (filterCommand)
                                                 {
-                                                    return;
+                                                    case 1:
+                                                        recipeNumber = CheckInteger("Enter number of recipe to view",
+                                                            filteredRecipes.Count) - 1;
+                                                        ViewRecipe(recipeNumber, filteredRecipes);
+                                                        break;
+                                                    case 2:
+                                                        break;
+                                                    case 3:
+                                                        return;
                                                 }
                                             }
                                             break;
@@ -170,7 +179,7 @@ namespace BookOfRecipes
         static void ViewRecipe(int number, List<Recipe> recipes)
         {
             Console.WriteLine("\n " + recipes[number].ToString());
-            PrintRecipes(recipes);
+            //PrintRecipes(recipes);
             Console.WriteLine(
                 "\n 1 - Edit recipe" +
                 "\n 2 - Delete recipe" +
@@ -324,7 +333,7 @@ namespace BookOfRecipes
 
         static List<Recipe> FilterByNutritionalValue(List<Recipe> recipes)
         {
-            PrintInColor(ConsoleColor.Cyan,
+            Console.WriteLine(
                 " Filter by" +
                 "\n 1 - Proteins" +
                 "\n 2 - Fats" +
