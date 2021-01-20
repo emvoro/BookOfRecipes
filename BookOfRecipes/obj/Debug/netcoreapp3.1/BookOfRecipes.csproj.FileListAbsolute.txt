@@ -1,0 +1,13 @@
+C:\Users\Emily\source\repos\BookOfRecipes\BookOfRecipes\bin\Debug\netcoreapp3.1\BookOfRecipes.exe
+C:\Users\Emily\source\repos\BookOfRecipes\BookOfRecipes\bin\Debug\netcoreapp3.1\BookOfRecipes.deps.json
+C:\Users\Emily\source\repos\BookOfRecipes\BookOfRecipes\bin\Debug\netcoreapp3.1\BookOfRecipes.runtimeconfig.json
+C:\Users\Emily\source\repos\BookOfRecipes\BookOfRecipes\bin\Debug\netcoreapp3.1\BookOfRecipes.runtimeconfig.dev.json
+C:\Users\Emily\source\repos\BookOfRecipes\BookOfRecipes\bin\Debug\netcoreapp3.1\BookOfRecipes.dll
+C:\Users\Emily\source\repos\BookOfRecipes\BookOfRecipes\bin\Debug\netcoreapp3.1\BookOfRecipes.pdb
+C:\Users\Emily\source\repos\BookOfRecipes\BookOfRecipes\obj\Debug\netcoreapp3.1\BookOfRecipes.csprojAssemblyReference.cache
+C:\Users\Emily\source\repos\BookOfRecipes\BookOfRecipes\obj\Debug\netcoreapp3.1\BookOfRecipes.AssemblyInfoInputs.cache
+C:\Users\Emily\source\repos\BookOfRecipes\BookOfRecipes\obj\Debug\netcoreapp3.1\BookOfRecipes.AssemblyInfo.cs
+C:\Users\Emily\source\repos\BookOfRecipes\BookOfRecipes\obj\Debug\netcoreapp3.1\BookOfRecipes.csproj.CoreCompileInputs.cache
+C:\Users\Emily\source\repos\BookOfRecipes\BookOfRecipes\obj\Debug\netcoreapp3.1\BookOfRecipes.dll
+C:\Users\Emily\source\repos\BookOfRecipes\BookOfRecipes\obj\Debug\netcoreapp3.1\BookOfRecipes.pdb
+C:\Users\Emily\source\repos\BookOfRecipes\BookOfRecipes\obj\Debug\netcoreapp3.1\BookOfRecipes.genruntimeconfig.cache
